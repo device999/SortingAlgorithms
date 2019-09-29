@@ -60,9 +60,9 @@
     <label for="exampleFormControlSelect1">Choose sorting algorithm</label>
     <select class="form-control" name="sort" id="exampleFormControlSelect1">
       <option value="1">Quicksort</option>
-      <option value="2">Mergesort</option>
-      <option value="3">In-place merge sort</option>
+      <option value="2">Mergesort</option>      
       <option value="4">Heapsort</option>
+      <option value="5">Insertion</option>
     </select>
   </div>
   <div class="form-group">

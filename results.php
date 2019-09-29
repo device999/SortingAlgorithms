@@ -13,9 +13,9 @@ else if($sortingType==2){
     include 'sorting/merge/index.php';
     echo "Mergesort";
 }
-else if($sortingType==3){
-    include 'sorting/merge/index2.php';
-    echo "In-place merge sort";
+else if($sortingType==5){
+    include 'sorting/insertion/index.php';
+    echo "Insertion";
 }
 else{
     include 'sorting/heap/index.php';
