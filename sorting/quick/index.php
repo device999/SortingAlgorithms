@@ -2,7 +2,7 @@
 /*
 PHP implementation of quick sort
 */
-function sort($array)
+function quickSort($array)
 {
     if (count($array) == 0)
         return array();

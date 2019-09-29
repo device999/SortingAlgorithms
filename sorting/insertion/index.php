@@ -2,7 +2,7 @@
 /*
 Algorithm of insertion sort;
 */
-function sort($ourArr)
+function insertionSort($ourArr)
 {
 	for($i=0;$i<count($ourArr);$i++)
 	{

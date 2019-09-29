@@ -7,19 +7,23 @@ if(isset($_POST["value"])){
 }
 if($sortingType==1){
     include 'sorting/quick/index.php';
-    echo "Quicksort";
+    //echo "Quicksort";
+    $answers = quickSort($values);
 }
 else if($sortingType==2){
     include 'sorting/merge/index.php';
-    echo "Mergesort";
+    //echo "Mergesort";
+    $answers = mergeSort($values);
 }
 else if($sortingType==5){
     include 'sorting/insertion/index.php';
-    echo "Insertion";
+    //echo "Insertion";
+    $answers = insertionSort($values);
 }
 else{
-    include 'sorting/heap/index.php';
-    echo "Heapsort";
+    include 'sorting/selection/index.php';
+    //echo "selection";
+    $answers = selectionSort($values);
 }
 ?>
 
@@ -82,7 +86,7 @@ else{
       <hr class="divider my-4 black">
         <p>Sorted By</p>
         <p>Before: <?php print_r($values)?></p>
-        <p>After: <?php print_r(sort($values))?></p>
+        <p>After: <?php print_r($answers)?></p>
     </div>
   </section>
 

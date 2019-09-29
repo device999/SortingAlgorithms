@@ -2,7 +2,7 @@
 /*
 PHP implementation of merge sort
 */
-function sort($my_array){
+function mergeSort($my_array){
 	if(count($my_array) == 1 ) return $my_array;
 	$mid = count($my_array) / 2;
     $left = array_slice($my_array, 0, $mid);

@@ -2,12 +2,7 @@
 /*
 PHP implementation of selection sort
 */
-$arr = array(243,23,9,5,66,7,8);
-        print_r($arr);
-        print "<br/>";
-        print "After Sorting operation";
-        print "<br/>";
-        
+function selectionSort($arr){
     for($i=0;$i<count($arr)-1;$i++)
     {
         $lowestKey = -1;
@@ -29,5 +24,6 @@ $arr = array(243,23,9,5,66,7,8);
             }
 
     }
-print_r($arr);
+    return $arr;
+}
 ?>
