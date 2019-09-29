@@ -55,10 +55,10 @@
     <div class="container">
     <h2 class="text-center mt-0">Sort yourself</h2>
       <hr class="divider my-4 black">
-      <form>
+      <form method="post" action="results.php">
   <div class="form-group">
     <label for="exampleFormControlSelect1">Choose sorting algorithm</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" name="sort" id="exampleFormControlSelect1">
       <option value="1">Quicksort</option>
       <option value="2">Mergesort</option>
       <option value="3">In-place merge sort</option>
@@ -67,10 +67,9 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Input numbers</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="15, 52, 243"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" name="value" rows="3" placeholder="15, 52, 243"></textarea>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Submit</label>
     <input type="submit" class="form-control btn btn-success"/>
   </div>
 </form>
