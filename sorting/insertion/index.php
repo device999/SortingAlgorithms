@@ -1,9 +1,8 @@
 <?php
 /*
 Algorithm of insertion sort;
-Array is given by us.
 */
-function insert($ourArr)
+function sort($ourArr)
 {
 	for($i=0;$i<count($ourArr);$i++)
 	{
@@ -18,7 +17,4 @@ function insert($ourArr)
 	}
 	return $ourArr;
 }
-$beforeS = array(3,14,5,7,10,1,56,100,2);
-$beforeS = insert($beforeS);
-print_r($beforeS);
 ?>
